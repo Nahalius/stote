@@ -1,0 +1,12 @@
+p h1 h2 h3{
+font-family: 'Ledger', serif;
+}
+
+/*Jumbotron*/
+
+.jumbotron {
+padding: 15px 15px;
+margin: 0px 20px ;
+color: inherit;
+background-color: #ecf0f1;
+}
