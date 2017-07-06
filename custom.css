@@ -8,9 +8,36 @@ font-family: 'Ledger', serif;
 padding: 15px 15px;
 margin: 0px 20px ;
 color: inherit;
-
 }
 
+header {
+  position: relative;
+  background: url(assets/bg-header.jpg) center;
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+}
+
+.navbar-default {
+    background-color: rgba(20, 51, 82, 0.75);
+    border-color: #143352;
+}
+.home {
+  position: absolute;
+  top: 35%;
+  width: 40%;
+  left: 10%;
+}
+
+.home .btn-success {
+  background-color: #ffad4e;
+  border-color:  #ffad4e;
+}
+
+.home .btn-success:hover {
+  background-color: #c50411;
+  border-color:  #c50411;
+}
 .google-maps {
     position: relative;
     padding-bottom: 55%; // This is the aspect ratio
