@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Стоте</title>
-        <link rel="stylesheet" type="text/css" href="custom.css">
-
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -17,9 +15,13 @@
         <!-- Theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ledger" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="custom.css">
     </head>
 
     <body>
+      <div id="wrapper">
+
+
         <header>
             <!-- Fixed navbar -->
             <nav class="navbar navbar-default navbar-fixed-top">
@@ -43,8 +45,8 @@
                       <ul class="dropdown-menu">
                         <li><a href="#sever-zapad">Северозападен район</a></li>
                         <li><a href="#sever">Северен централен район</a></li>
-                        <li><a href="#sever-istok">Североизточен район</a></li>
-                        <li><a href="#iug-istok">Югоизточен район</a></li>
+                        <li><a href="#sever-iztok">Североизточен район</a></li>
+                        <li><a href="#iug-iztok">Югоизточен район</a></li>
                         <li><a href="#iug">Южен централен район</a></li>
                         <li><a href="#iug-zapad">Югозападен район</a></li>
 
@@ -63,58 +65,78 @@
             <br>
             <br>
         <!-- 16:9 aspect ratio -->
-        
         <section class="home">
-          <div>
-            <h1>100-те туристически обекта на България</h1>
-            <p>Опознай чудесата на България!</p>
-            <p><a class="btn btn-success btn-lg" href="#" role="button">Научи повече</a></p>
+          <div class="jumbotron">
+              <div class="container">
+              <h1>100-те туристически обекта на България</h1>
+              <p>Опознай чудесата на България!</p>
+              <p><a class="btn btn-success btn-lg" href="#" role="button">Научи повече</a></p>
           </div>
+        </div>
         </section>
-
       </header>
-        <section class="video">
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vSodz71rS7Q?rel=0&amp;controls=0&amp;showinfo=0" ></iframe>
+
+        <section class="info">
+          <div class="col-lg-6 .col-md-6 .col-sm-12">
+            <img class="img-responsive" src="assets\maps_bulgaria_small-01.png"/>
           </div>
-          <div class="jumbotron" >
+          <div class="jumbotron col-lg-6 .col-md-6 .col-sm-12">
             <h1>100-те туристически обекта на България</h1>
             <p>„Опознай България – 100 национални туристически обекта“ е българско национално туристическо движение, възникнало през 1966.</p>
             <p>Целта на движението е да насърчи туристите да се запознаят с някои от най-значимите туристически обекти в България. Сред обектите
               на движението са културни, исторически, географски, археологически, архитектурни паметници със световно, национално и регионално
               значение. Те включват най-забележителните природни феномени в страната, исторически местности, архитектурни резервати, храмове и
               манастири, най-високите планински върхове, даващи цялостна картина на богатото културно-историческо и приридно наследство по българските
-              земи от дълбока древност до наши дни</p>
-            <br>
+              земи от дълбока древност до наши дни.</p>
             <p><a class="btn btn-success btn-lg" href="#" role="button">Попълни Анкетата</a></p>
+          </div>
         </section>
 
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vSodz71rS7Q?rel=0&amp;controls=0&amp;showinfo=0"></iframe>
+        </div>
           <hr>
           <h1>Стоте Национални Туристически Обекта</h1>
           <p>*Подредени по региони и области.</p>
           <hr>
 
-          <div class="row">
-            <div  class=" col-md-6" >
-                <h2 id = "sever-zapad">Северозападен район</h2>
-                    <h3>Видин</h3>
-                        <ul>
+        <section class="sever-zapad">
+            <div class="row">
+              <div class="col-md-12" >
+                <header class="sever-zapad">
+                  <h2 id = "sever-zapad">Северозападен район</h2>
+                  <img src="assets\severozapad.png" alt=""/>
+                </header>
+                    <div class="objects">
+
+                      <div id = "lovech" class="col-md-2 col-sm-6">
+                          <h3>Ловеч</h3>
+                            <ul>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%92%D0%B0%D1%81%D0%B8%D0%BB_%D0%9B%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%E2%80%9C_(%D0%9B%D0%BE%D0%B2%D0%B5%D1%87)" title="Музей „Васил Левски“ (Ловеч)">Музей „Васил Левски“</a></li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D0%BA%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%BE_%D1%85%D0%B0%D0%BD%D1%87%D0%B5" title="Къкринско ханче">Къкринско ханче</a></li>
+                                <li>Национален пещерен дом</li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D1%83%D1%87%D0%B5%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A7%D0%B5%D1%80%D0%BD%D0%B8_%D0%9E%D1%81%D1%8A%D0%BC)" title="Природонаучен музей (Черни Осъм)">Природонаучен музей село Черни Осъм</a></li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Троянски манастир">Троянска Св.Обител „Успение Богородично“</a></li>
+                                <li>Музей на народните художествени занаяти и приложните изкуства</li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A2%D0%B5%D1%82%D0%B5%D0%B2%D0%B5%D0%BD)" title="Исторически музей (Тетевен)">Исторически музей</a></li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D1%8A%D0%B5%D0%B2%D0%B0_%D0%B4%D1%83%D0%BF%D0%BA%D0%B0" title="Съева дупка">Пещера Съева дупка</a></li>
+                            </ul>
+                        </div>
+
+                      <div id = "vidin" class="col-md-2 col-sm-6">
+                          <h3>Видин</h3>
+                          <ul>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%91%D0%B0%D0%B1%D0%B0_%D0%92%D0%B8%D0%B4%D0%B0" title="Баба Вида">Музей-крепост „Баба Вида“</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%9A%D0%BE%D0%BD%D0%B0%D0%BA%D0%B0%E2%80%9C" title="Музей „Конака“">Исторически музей</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D1%83%D1%80%D0%B0" title="Магура">Пещера Магура</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D1%88%D0%BA%D0%B8_%D1%81%D0%BA%D0%B0%D0%BB%D0%B8" title="Белоградчишки скали">Белоградчишки скали</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D1%88%D0%BA%D0%B0_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82" title="Белоградчишка крепост">Белоградчишка крепост</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%91%D0%B5%D0%BB%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%87%D0%B8%D0%BA" class="mw-redirect" title="Исторически музей, Белоградчик">Исторически музей</a></li>
-                        </ul>
-                    <h3>Монтана</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0)" title="Етнографски музей (Берковица)">Етнографски музей</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC" title="Ком">Връх Ком</a></li>
-                            <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%98%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D0%B7%D0%BE%D0%B2%E2%80%9C_(%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0)" title="Къща-музей „Иван Вазов“ (Берковица)">Къща-музей „Иван Вазов“</a></li>
-                            <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1%86%D0%B8)" title="Исторически музей (Чипровци)">Исторически музей</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Чипровски манастир">Чипровски манастир</a></li>
-                        </ul>
-                    <h3>Враца</h3>
+                          </ul>
+                        </div>
+
+                      <div id = "vratsa" class="col-md-2 col-sm-6">
+                        <h3>Враца</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%BA%D0%B0" title="Леденика">Пещера Леденика</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%92%D1%80%D0%B0%D1%86%D0%B0)" title="Регионален исторически музей (Враца)">Регионален исторически музей</a></li>
@@ -122,61 +144,91 @@
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B0%D0%B4%D0%B5%D1%86%D0%BA%D0%B8_(%D0%BA%D0%BE%D1%80%D0%B0%D0%B1)" title="Радецки (кораб)">Национален музей „Параход Радецки“</a></li>
                             <li>Паметник на Христо Ботев и неговата чета</li>
                         </ul>
-                    <h3>Ловеч</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%92%D0%B0%D1%81%D0%B8%D0%BB_%D0%9B%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%E2%80%9C_(%D0%9B%D0%BE%D0%B2%D0%B5%D1%87)" title="Музей „Васил Левски“ (Ловеч)">Музей „Васил Левски“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D0%BA%D1%80%D0%B8%D0%BD%D1%81%D0%BA%D0%BE_%D1%85%D0%B0%D0%BD%D1%87%D0%B5" title="Къкринско ханче">Къкринско ханче</a></li>
-                            <li>Национален пещерен дом</li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D1%80%D0%BE%D0%B4%D0%BE%D0%BD%D0%B0%D1%83%D1%87%D0%B5%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A7%D0%B5%D1%80%D0%BD%D0%B8_%D0%9E%D1%81%D1%8A%D0%BC)" title="Природонаучен музей (Черни Осъм)">Природонаучен музей село Черни Осъм</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A2%D1%80%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Троянски манастир">Троянска Св.Обител „Успение Богородично“</a></li>
-                            <li>Музей на народните художествени занаяти и приложните изкуства</li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A2%D0%B5%D1%82%D0%B5%D0%B2%D0%B5%D0%BD)" title="Исторически музей (Тетевен)">Исторически музей</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D1%8A%D0%B5%D0%B2%D0%B0_%D0%B4%D1%83%D0%BF%D0%BA%D0%B0" title="Съева дупка">Пещера Съева дупка</a></li>
-                        </ul>
-                    <h3>Плевен</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8_(%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD)" title="Свети Георги (Плевен)">Мавзолей-параклис „Св.Георги Победоносец“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%E2%80%9E%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0_%D0%B5%D0%BF%D0%BE%D0%BF%D0%B5%D1%8F_1877_%D0%B3.%E2%80%9C" title="Панорама „Плевенска епопея 1877 г.“">Панорама „Плевенска епопея 1877&nbsp;г.“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD"class="mw-redirect" title="Регионален исторически музей, Плевен">Регионален исторически музей</a></li>
-                        </ul>
+                      </div>
+
+                      <div id = "pleven" class="col-md-2 col-sm-6">
+                        <h3>Плевен</h3>
+                          <ul>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%82%D0%B8_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8_(%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD)" title="Свети Георги (Плевен)">Мавзолей-параклис „Св.Георги Победоносец“</a></li>
+                              <li><a target="_blank"   href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BC%D0%B0_%E2%80%9E%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD%D1%81%D0%BA%D0%B0_%D0%B5%D0%BF%D0%BE%D0%BF%D0%B5%D1%8F_1877_%D0%B3.%E2%80%9C" title="Панорама „Плевенска епопея 1877 г.“">Панорама „Плевенска епопея 1877&nbsp;г.“</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9F%D0%BB%D0%B5%D0%B2%D0%B5%D0%BD"class="mw-redirect" title="Регионален исторически музей, Плевен">Регионален исторически музей</a></li>
+                          </ul>
+                      </div>
+
+                      <div id = "montana" class="col-md-2 col-sm-6">
+                          <h3>Монтана</h3>
+                            <ul>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0)" title="Етнографски музей (Берковица)">Етнографски музей</a></li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BC" title="Ком">Връх Ком</a></li>
+                                <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%98%D0%B2%D0%B0%D0%BD_%D0%92%D0%B0%D0%B7%D0%BE%D0%B2%E2%80%9C_(%D0%91%D0%B5%D1%80%D0%BA%D0%BE%D0%B2%D0%B8%D1%86%D0%B0)" title="Къща-музей „Иван Вазов“ (Берковица)">Къща-музей „Иван Вазов“</a></li>
+                                <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1%86%D0%B8)" title="Исторически музей (Чипровци)">Исторически музей</a></li>
+                                <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B8%D0%BF%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Чипровски манастир">Чипровски манастир</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+
+        <section class="sever">
+          <div class="row">
+            <div class=" col-md-12" >
+              <header class="sever">
                 <h2 id = "sever">Северен централен район</h2>
+                <img src="assets\sever.png" alt=""/>
+              </header>
+
+              <div class="objects">
+                  <div id = "veliko-tarnovo" class="col-md-2 col-sm-6">
                     <h3>Велико Търново</h3>
-                        <ul>
-                            <li><a href="https://bg.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D0%B5%D0%B2%D0%B5%D1%86" title="Царевец">Архитектурно-исторически резерват „Царевец“</a></li>
-                            <li><a href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D0%B1%D0%B0%D0%BD%D0%B0%D1%81%D0%B8" title="Арбанаси">Архитектурно-музеен резерват „Арбанаси“</a></li>
-                            <li><a href="https://bg.wikipedia.org/w/index.php?title=%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE_%D0%A2%D1%8A%D1%80%D0%BD%D0%BE%D0%B2%D0%BE)&amp;action=edit&amp;redlink=1" class="new" title="Регионален исторически музей (Велико Търново) (страницата не съществува)">Регионален исторически музей</a></li>
-                            <li><a href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%90%D0%BB%D0%B5%D0%BA%D0%BE_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Алеко Константинов“">Къща-музей „Алеко Константинов“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D0%BE%D0%BB%D0%B8%D0%B2%D0%BD%D0%B8%D1%86%D0%B0" title="Даскалоливница">Архитектурно-исторически комплекс „Даскалоливницата“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%98%D0%BB%D0%B0%D1%80%D0%B8%D0%BE%D0%BD_%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%B8%D0%BE%D0%BF%D0%BE%D0%BB%D1%81%D0%BA%D0%B8%E2%80%9C"title="Къща-музей „Иларион Макариополски“">Къща-музей „Иларион Макариополски“</a></li>
+                          <ul>
+                              <li><a href="https://bg.wikipedia.org/wiki/%D0%A6%D0%B0%D1%80%D0%B5%D0%B2%D0%B5%D1%86" title="Царевец">Архитектурно-исторически резерват „Царевец“</a></li>
+                              <li><a href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D0%B1%D0%B0%D0%BD%D0%B0%D1%81%D0%B8" title="Арбанаси">Архитектурно-музеен резерват „Арбанаси“</a></li>
+                              <li><a href="https://bg.wikipedia.org/w/index.php?title=%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%BE_%D0%A2%D1%8A%D1%80%D0%BD%D0%BE%D0%B2%D0%BE)&amp;action=edit&amp;redlink=1" class="new" title="Регионален исторически музей (Велико Търново) (страницата не съществува)">Регионален исторически музей</a></li>
+                              <li><a href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%90%D0%BB%D0%B5%D0%BA%D0%BE_%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D0%B0%D0%BD%D1%82%D0%B8%D0%BD%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Алеко Константинов“">Къща-музей „Алеко Константинов“</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%B0%D1%81%D0%BA%D0%B0%D0%BB%D0%BE%D0%BB%D0%B8%D0%B2%D0%BD%D0%B8%D1%86%D0%B0" title="Даскалоливница">Архитектурно-исторически комплекс „Даскалоливницата“</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%98%D0%BB%D0%B0%D1%80%D0%B8%D0%BE%D0%BD_%D0%9C%D0%B0%D0%BA%D0%B0%D1%80%D0%B8%D0%BE%D0%BF%D0%BE%D0%BB%D1%81%D0%BA%D0%B8%E2%80%9C"title="Къща-музей „Иларион Макариополски“">Къща-музей „Иларион Макариополски“</a></li>
+                          </ul>
+                  </div>
+
+                  <div id = "gabrovo" class="col-md-2 col-sm-6">
+                      <h3>Габрово</h3>
+                              <ul>
+                                  <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D1%8A%D1%80_(%D0%BC%D1%83%D0%B7%D0%B5%D0%B9)" title="Етър (музей)">Етнографски музей на открито „Етъра“</a></li>
+                                  <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A3%D0%B7%D0%B0%D0%BD%D0%B0" title="Узана">Географски център на България – местността „Узана“</a></li>
+                                  <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE" title="Национален музей на образованието">Музей на образованието</a></li>
+                                  <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%BD%D0%B0_%D1%85%D1%83%D0%BC%D0%BE%D1%80%D0%B0_%D0%B8_%D1%81%D0%B0%D1%82%D0%B8%D1%80%D0%B0%D1%82%D0%B0" title="Дом на хумора и сатирата">Дом на хумора и сатирата</a></li>
+                                  <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%91%D0%BE%D0%B6%D0%B5%D0%BD%D1%86%D0%B8" class="mw-redirect" title="Боженци">Архитектурно-исторически резерват</a></li>
+                                  <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%B7%D0%B0_%D1%80%D0%B5%D0%B7%D0%B1%D0%B0%D1%80%D1%81%D0%BA%D0%BE_%D0%B8_%D0%B7%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%BE_%D0%B8%D0%B7%D0%BA%D1%83%D1%81%D1%82%D0%B2%D0%BE" title="Специализиран музей за резбарско и зографско изкуство">Специализиран музей за резбарско и зографско изкуство</a></li>
+                                  <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%94%D1%80%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Дряновски манастир">Дряновски манастир</a></li>
+                                  <li><a  target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D0%B0%D1%87%D0%BE_%D0%9A%D0%B8%D1%80%D0%BE_(%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0)" title="Бачо Киро (пещера)">Пещера „Бачо Киро“</a></li>
+                                  <li>Паметник на Христо Ботев и неговата чета</li>
+                            </ul>
+                  </div>
+
+                  <div id = "ruse" class="col-md-2 col-sm-6">
+                          <h3>Русе</h3>
+                          <ul>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%97%D0%B0%D1%85%D0%B0%D1%80%D0%B8%D0%B9_%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Захарий Стоянов“">Къща-музей „Захарий Стоянов“</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%92%D1%8A%D0%B7%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D1%82%D0%B5" class="mw-redirect" title="Пантеон на Възрожденците">Пантеон на Възрожденците</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D1%81%D0%BA%D0%B0%D0%BB%D0%BD%D0%B8_%D1%86%D1%8A%D1%80%D0%BA%D0%B2%D0%B8" title="Ивановски скални църкви">Ивановски скални църкви</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D0%B0%D1%81%D0%B0%D1%80%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Басарбовски манастир">Скален Манастир „Димитрий Басарбовски“</a></li>
+                              <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B0%D0%BD%D0%B2%D1%8A%D1%80%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Каранвърбовски манастир">Музей „Света Марина“</a></li>
+                              <li>Музей „Освободителна война“</li>
                         </ul>
-                    <h3>Габрово</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D1%8A%D1%80_(%D0%BC%D1%83%D0%B7%D0%B5%D0%B9)" title="Етър (музей)">Етнографски музей на открито „Етъра“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A3%D0%B7%D0%B0%D0%BD%D0%B0" title="Узана">Географски център на България – местността „Узана“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0_%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D1%82%D0%BE" title="Национален музей на образованието">Музей на образованието</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%BD%D0%B0_%D1%85%D1%83%D0%BC%D0%BE%D1%80%D0%B0_%D0%B8_%D1%81%D0%B0%D1%82%D0%B8%D1%80%D0%B0%D1%82%D0%B0" title="Дом на хумора и сатирата">Дом на хумора и сатирата</a></li>
-                            <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%91%D0%BE%D0%B6%D0%B5%D0%BD%D1%86%D0%B8" class="mw-redirect" title="Боженци">Архитектурно-исторически резерват</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D0%B7%D0%B8%D1%80%D0%B0%D0%BD_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%B7%D0%B0_%D1%80%D0%B5%D0%B7%D0%B1%D0%B0%D1%80%D1%81%D0%BA%D0%BE_%D0%B8_%D0%B7%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%BE_%D0%B8%D0%B7%D0%BA%D1%83%D1%81%D1%82%D0%B2%D0%BE" title="Специализиран музей за резбарско и зографско изкуство">Специализиран музей за резбарско и зографско изкуство</a></li>
-                            <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%94%D1%80%D1%8F%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Дряновски манастир">Дряновски манастир</a></li>
-                            <li><a  target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D0%B0%D1%87%D0%BE_%D0%9A%D0%B8%D1%80%D0%BE_(%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0)" title="Бачо Киро (пещера)">Пещера „Бачо Киро“</a></li>
-                            <li>Паметник на Христо Ботев и неговата чета</li>
-                        </ul>
-                    <h3>Русе</h3>
-                        <ul>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%97%D0%B0%D1%85%D0%B0%D1%80%D0%B8%D0%B9_%D0%A1%D1%82%D0%BE%D1%8F%D0%BD%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Захарий Стоянов“">Къща-музей „Захарий Стоянов“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BD%D1%82%D0%B5%D0%BE%D0%BD_%D0%BD%D0%B0_%D0%92%D1%8A%D0%B7%D1%80%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D1%86%D0%B8%D1%82%D0%B5" class="mw-redirect" title="Пантеон на Възрожденците">Пантеон на Възрожденците</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D0%B2%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D1%81%D0%BA%D0%B0%D0%BB%D0%BD%D0%B8_%D1%86%D1%8A%D1%80%D0%BA%D0%B2%D0%B8" title="Ивановски скални църкви">Ивановски скални църкви</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D0%B0%D1%81%D0%B0%D1%80%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Басарбовски манастир">Скален Манастир „Димитрий Басарбовски“</a></li>
-                            <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B0%D0%BD%D0%B2%D1%8A%D1%80%D0%B1%D0%BE%D0%B2%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Каранвърбовски манастир">Музей „Света Марина“</a></li>
-                            <li>Музей „Освободителна война“</li>
-                        </ul>
-                    <h3>Силистра</h3>
+                      </div>
+
+                  <div id = "silistra" class="col-md-2 col-sm-6">
+                  <h3>Силистра</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%A1%D0%B8%D0%BB%D0%B8%D1%81%D1%82%D1%80%D0%B0"class="mw-redirect" title="Регионален исторически музей, Силистра">Исторически музей</a></li>
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%A1%D1%80%D0%B5%D0%B1%D1%8A%D1%80%D0%BD%D0%B0_(%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%B0%D1%82)" title="Сребърна (резерват)">Природен резерват Сребърна</a></li>
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%92%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE_%D0%B3%D1%80%D0%BE%D0%B1%D0%B8%D1%89%D0%B5_(%D0%A2%D1%83%D1%82%D1%80%D0%B0%D0%BA%D0%B0%D0%BD)" title="Военно гробище (Тутракан)">Военно гробище</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%94%D1%83%D0%BD%D0%B0%D0%B2%D1%81%D0%BA%D0%B8_%D1%80%D0%B8%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2_%D0%B8_%D0%BB%D0%BE%D0%B4%D0%BA%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B5%E2%80%9C"title="Етнографски музей „Дунавски риболов и лодкостроене“">Музей на дунавския риболов и лодкарство</a></li>
                         </ul>
+                </div>
+
+                  <div id = "razgrad" class="col-md-2 col-sm-6">
                     <h3>Разград</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%90%D0%B1%D1%80%D0%B8%D1%82%D1%83%D1%81" title="Абритус">Археологически резерват „Абритус“</a></li>
@@ -185,14 +237,31 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%B5%D0%BC%D0%B8%D1%80_%D0%B1%D0%B0%D0%B1%D0%B0_%D1%82%D0%B5%D0%BA%D0%B5" title="Демир баба теке">Демир баба теке</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D0%B8%D1%81" title="Хелис">Тракийски град Хелис – с. Свещари</a></li>
                         </ul>
-                <h2 id = "sever-istok">Североизточен район</h2>
-                        <h3>Варна</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <section class="sever-iztok">
+            <div class="row">
+              <div class=" col-md-12" >
+                <header class="sever-iztok">
+                  <h2 id = "sever-iztok">Североизточен район</h2>
+                  <img src="assets\sever-iztok.png" alt=""/>
+                </header>
+                <div class="objects">
+                  <div id = "varna" class="col-md-2 col-sm-6">
+                      <h3>Варна</h3>
                             <ul>
                                 <li><a href="https://bg.wikipedia.org/wiki/%D0%92%D0%B0%D1%80%D0%BD%D0%B5%D0%BD%D1%81%D0%BA%D0%B8_%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9" title="Варненски археологически музей">Регионален исторически музей</a></li>
                                 <li><a href="https://bg.wikipedia.org/wiki/%D0%92%D0%BE%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC%D0%BE%D1%80%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9" title="Военноморски музей">Военноморски музей</a></li>
                                 <li><a href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0_%D0%BC%D0%BE%D0%B7%D0%B0%D0%B9%D0%BA%D0%B8%D1%82%D0%B5,_%D0%94%D0%B5%D0%B2%D0%BD%D1%8F" title="Музей на мозайките, Девня">Музей на мозайките</a></li>
                             </ul>
-                        <h3>Добрич</h3>
+                </div>
+
+                  <div id = "dobrich" class="col-md-2 col-sm-6">
+                      <h3>Добрич</h3>
                             <ul>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC-%D0%BF%D0%B0%D0%BC%D0%B5%D1%82%D0%BD%D0%B8%D0%BA_%E2%80%9E%D0%99%D0%BE%D1%80%D0%B4%D0%B0%D0%BD_%D0%99%D0%BE%D0%B2%D0%BA%D0%BE%D0%B2%E2%80%9C" title="Дом-паметник „Йордан Йовков“">Дом-паметник „Йордан Йовков“</a></li>
                                 <li>Художествена галерия</li>
@@ -201,12 +270,18 @@
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%B0%D0%BB%D0%B8%D0%B0%D0%BA%D1%80%D0%B0" title="Калиакра">Нос Калиакра&nbsp;– арх. резерват „Калиакра“</a></li>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%9A%D0%B0%D0%B2%D0%B0%D1%80%D0%BD%D0%B0)" title="Исторически музей (Каварна)">Исторически музей</a></li>
                             </ul>
-                        <h3>Търговище</h3>
+                  </div>
+
+                  <div id = "targovishte" class="col-md-2 col-sm-6">
+                      <h3>Търговище</h3>
                             <ul>
                                 <li>Славейковото училище</li>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B8%D1%81%D0%B8%D0%BE%D0%BD%D0%B8%D1%81" title="Мисионис">Средновековна крепост „Мисионис“</a></li>
                             </ul>
-                        <h3>Шумен</h3>
+                  </div>
+
+                  <div id = "shumen" class="col-md-2 col-sm-6">
+                      <h3>Шумен</h3>
                             <ul>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D1%8A%D0%B7%D0%B4%D0%B0%D1%82%D0%B5%D0%BB%D0%B8_%D0%BD%D0%B0_%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%82%D0%B0_%D0%B4%D1%8A%D1%80%D0%B6%D0%B0%D0%B2%D0%B0" title="Създатели на българската държава">„Паметник 1300години България“</a></li>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A2%D0%BE%D0%BC%D0%B1%D1%83%D0%BB_%D0%B4%D0%B6%D0%B0%D0%BC%D0%B8%D1%8F" title="Томбул джамия">Томбул джамия</a></li>
@@ -215,11 +290,22 @@
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B4%D0%B0%D1%80%D0%B0_(%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%B0%D1%82)" title="Мадара (археологически резерват)">Археологически резерват „Мадара“</a></li>
                                 <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%BA%D0%BE-%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D1%80%D0%B5%D0%B7%D0%B5%D1%80%D0%B2%D0%B0%D1%82_%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%D0%92%D0%B5%D0%BB%D0%B8%D0%BA%D0%B8_%D0%9F%D1%80%D0%B5%D1%81%D0%BB%D0%B0%D0%B2"title="Национален историко-археологически резерват и музей Велики Преслав">Археологически резерват Велики Преслав</a></li>
                             </ul>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class=" col-md-6">
+        </section>
 
-                <h2 id = "iug-istok">Югоизточен район</h2>
-                    <h3>Бургас</h3>
+        <section class="iug-iztok">
+                <div class="row">
+                  <div class=" col-md-12">
+                    <header class="sever-iztok">
+                      <h2 id = "iug-iztok">Югоизточен район</h2>
+                      <img src="assets\iug-iztok.png" alt=""/>
+                    </header>
+                    <div class="objects">
+                      <div id = "burgas" class="col-md-3 col-sm-6">
+                      <h3>Бургас</h3>
                         <ul>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9D%D0%B5%D1%81%D0%B5%D0%B1%D1%8A%D1%80" title="Археологически музей, Несебър">Архитектурно-исторически резерват</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0_%D1%81%D0%BE%D0%BB%D1%82%D0%B0" title="Музей на солта">Музей на солта</a></li>
@@ -231,7 +317,10 @@
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%A1%D0%BE%D0%B7%D0%BE%D0%BF%D0%BE%D0%BB" title="Археологически музей, Созопол">Археологически музей</a></li>
                             <li>Исторически музей</li>
                         </ul>
-                    <h3>Сливен</h3>
+                    </div>
+
+                      <div id = "sliven" class="col-md-3 col-sm-6">
+                      <h3>Сливен</h3>
                         <ul>
                             <li>Къща-музей „Хаджи Димитър“</li>
                             <li>Национален музей на текстилната индустрия</li>
@@ -241,7 +330,10 @@
                             <li>Къща-музей „Йордан Йовков“</li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%B0%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%B0_%D0%BA%D1%83%D0%BB%D1%82%D1%83%D1%80%D0%B0" title="Карановска култура">Исторически музей „Каранова могила“</a></li>
                         </ul>
-                    <h3>Стара Загора</h3>
+                    </div>
+
+                      <div id = "stara-zagora" class="col-md-3 col-sm-6">
+                      <h3>Стара Загора</h3>
                         <ul>
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%9F%D0%B5%D0%B9%D0%BE_%D0%AF%D0%B2%D0%BE%D1%80%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Пейо Яворов“">Къща-музей „Пейо Яворов“</a></li>
                             <li>Художествена галерия „Никола Манев“</li>
@@ -257,14 +349,31 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A8%D1%83%D0%BC%D0%B5%D0%BD%D1%81%D0%BA%D0%B0_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82" title="Шуменска крепост">Историко-археологически резерват „Шуменска крепост“</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%A8%D1%83%D0%BC%D0%B5%D0%BD)" title="Регионален исторически музей (Шумен)">Исторически музей</a></li>
                         </ul>
-                    <h3>Ямбол</h3>
+                    </div>
+
+                      <div id = "yambol" class="col-md-3 col-sm-6">
+                      <h3>Ямбол</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D0%B0%D0%B1%D0%B8%D0%BB%D0%B5_(%D0%B4%D1%80%D0%B5%D0%B2%D0%B5%D0%BD_%D0%B3%D1%80%D0%B0%D0%B4)" title="Кабиле (древен град)">Античен град „Кабиле“</a></li>
                             <li>Исторически музей Ямбол</li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%95%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%BE-%D0%B0%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%95%D0%BB%D1%85%D0%BE%D0%B2%D0%BE)"title="Етнографско-археологически музей (Елхово)">Етнографски музей</a></li>
                         </ul>
-                <h2 id = "iug">Южен централен район</h2>
-                    <h3>Пловдив</h3>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="iug-centralen">
+                <div class="row">
+                  <div class=" col-md-12">
+                    <header class="iug-centralen">
+                      <h2 id = "iug-centralen">Южен централен район</h2>
+                      <img src="assets\iug-centralen.png" alt=""/>
+                    </header>
+                    <div class="objects">
+                      <div id = "plovdiv" class="col-md-2 col-sm-6">
+                      <h3>Пловдив</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2" class="mw-redirect" title="Регионален исторически музей, Пловдив">Исторически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B5%D1%82%D0%BD%D0%BE%D0%B3%D1%80%D0%B0%D1%84%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%9F%D0%BB%D0%BE%D0%B2%D0%B4%D0%B8%D0%B2)"title="Регионален етнографски музей (Пловдив)">Етнографски музей</a></li>
@@ -282,7 +391,10 @@
                             <li>Туристически възпоменателен комплекс "Бунтовна</li>
                             <li>Археологически музей Хисаря</li>
                         </ul>
-                    <h3>Пазарджик</h3>
+                    </div>
+
+                      <div id = "pazardjik" class="col-md-2 col-sm-6">
+                      <h3>Пазарджик</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%A1%D1%82%D0%B0%D0%BD%D0%B8%D1%81%D0%BB%D0%B0%D0%B2_%D0%94%D0%BE%D1%81%D0%BF%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%E2%80%9C" title="Къща-музей „Станислав Доспевски“">Къща-музей „Станислав Доспевски“</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A3%D1%81%D0%BF%D0%B5%D0%BD%D0%B8%D0%B5_%D0%91%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%87%D0%BD%D0%BE_(%D0%9F%D0%B0%D0%B7%D0%B0%D1%80%D0%B4%D0%B6%D0%B8%D0%BA)" title="Успение Богородично (Пазарджик)">Катедрална църква „Света Богородица“</a></li>
@@ -296,7 +408,10 @@
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%92%D0%B5%D0%BB%D0%B8%D0%BD%D0%B3%D1%80%D0%B0%D0%B4)" title="Исторически музей (Велинград)">Исторически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_(%D0%91%D1%80%D0%B0%D1%86%D0%B8%D0%B3%D0%BE%D0%B2%D0%BE)" title="Исторически музей (Брацигово)">Градски исторически музей</a></li>
                         </ul>
-                    <h3>Смолян</h3>
+                    </div>
+
+                      <div id = "smolyan" class="col-md-2 col-sm-6">
+                      <h3>Смолян</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%A1%D0%BC%D0%BE%D0%BB%D1%8F%D0%BD" class="mw-redirect"title="Регионален исторически музей, Смолян">Исторически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0%D1%80%D0%B8%D1%83%D0%BC_%D1%81_%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B0_%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0_%D0%BE%D0%B1%D1%81%D0%B5%D1%80%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B8%D1%8F,_%D0%A1%D0%BC%D0%BE%D0%BB%D1%8F%D0%BD"title="Планетариум с народна астрономическа обсерватория, Смолян">Народна астрономическа обсерватория</a></li>
@@ -314,7 +429,10 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D1%83%D0%B9%D0%BD%D0%BE%D0%B2%D1%81%D0%BA%D0%BE_%D0%B6%D0%B4%D1%80%D0%B5%D0%BB%D0%BE" title="Буйновско ждрело">Буйновско ждрело</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%AF%D0%B3%D0%BE%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%B0_%D0%BF%D0%B5%D1%89%D0%B5%D1%80%D0%B0" title="Ягодинска пещера">Ягодинска пещера</a></li>
                         </ul>
-                    <h3>Хасково</h3>
+                    </div>
+
+                      <div id = "haskovo" class="col-md-2 col-sm-6">
+                      <h3>Хасково</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9C%D0%BE%D0%BD%D1%83%D0%BC%D0%B5%D0%BD%D1%82_%E2%80%9E%D0%A1%D0%B2%D0%B5%D1%82%D0%B0_%D0%91%D0%BE%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D1%86%D0%B0%E2%80%9C_(%D0%A5%D0%B0%D1%81%D0%BA%D0%BE%D0%B2%D0%BE)"title="Монумент „Света Богородица“ (Хасково)">Монумент „Света Богородица с Младенеца“</a></li>
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0_%D0%B3%D1%80%D0%BE%D0%B1%D0%BD%D0%B8%D1%86%D0%B0" title="Александровска гробница">Александровска гробница</a></li>
@@ -326,14 +444,32 @@
                             <li>Дом-музей „Пеньо Пенев“</li>
                             <li>Народна астрономическа обсерватория и планетариум „Джордано Бруно“</li>
                         </ul>
-                    <h3>Кърджали</h3>
+                    </div>
+
+                      <div id = "kardjali" class="col-md-2 col-sm-6">
+                      <h3>Кърджали</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%80%D0%B4%D0%B6%D0%B0%D0%BB%D0%B8%D0%B9%D1%81%D0%BA%D0%B8_%D0%BC%D0%B0%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D1%80" title="Кърджалийски манастир">Манастирски комплекс „Св.Йоан Предтеча“</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D0%BF%D0%B5%D1%80%D0%B8%D0%BA%D0%BE%D0%BD" title="Перперикон">Перперикон</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9A%D1%8A%D1%80%D0%B4%D0%B6%D0%B0%D0%BB%D0%B8" class="mw-redirect" title="Регионален исторически музей, Кърджали">Регионален исторически музей</a></li>
                         </ul>
-                <h2 id = "iug-zapad">Югозападен район</h2>
-                    <h3 id = "sofia">София</h3>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="iug-zapad">
+                  <div class="row">
+                    <div class=" col-md-12">
+                      <header class="iug-zapad">
+                        <h2 id = "iug-zapad">Югозападен район</h2>
+                        <img src="assets\iug-zapad.png" alt=""/>
+                      </header>
+                    <div class="objects">
+
+                      <div id = "sofia" class="col-md-2 col-sm-6">
+                        <h3 id = "sofia">София</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9" title="Национален исторически музей">Национален исторически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%91%D0%BE%D1%8F%D0%BD%D1%81%D0%BA%D0%B0_%D1%86%D1%8A%D1%80%D0%BA%D0%B2%D0%B0" title="Боянска църква">Национален музей „Боянска църква“</a></li>
@@ -352,7 +488,10 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A5%D0%B8%D0%B6%D0%B0_%D0%90%D0%BB%D0%B5%D0%BA%D0%BE" class="mw-redirect" title="Хижа Алеко">Хижа Алеко</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B5%D1%80%D0%BD%D0%B8_%D0%B2%D1%80%D1%8A%D1%85" title="Черни връх">Черни връх</a></li>
                         </ul>
-                    <h3>Софийска област</h3>
+                      </div>
+
+                      <div id = "sofiiska-oblast" class="col-md-2 col-sm-6">
+                        <h3>Софийска област</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%95%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5" class="mw-redirect" title="Исторически музей, Етрополе">Исторически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BA%D1%83%D0%BB%D0%B0_(%D0%95%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5)" title="Часовникова кула (Етрополе)">Часовникова кула</a></li>
@@ -368,12 +507,18 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A7%D0%B0%D1%81%D0%BE%D0%B2%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0_%D0%BA%D1%83%D0%BB%D0%B0_(%D0%95%D1%82%D1%80%D0%BE%D0%BF%D0%BE%D0%BB%D0%B5)" title="Часовникова кула (Етрополе)">Часовникова кула</a></li>
                             <li>Исторически музей Ботевград</li>
                         </ul>
-                    <h3>Перник</h3>
+                      </div>
+
+                      <div id = "pernik" class="col-md-2 col-sm-6">
+                        <h3>Перник</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A2%D1%80%D1%8A%D0%BD%D1%81%D0%BA%D0%BE_%D0%B6%D0%B4%D1%80%D0%B5%D0%BB%D0%BE" title="Трънско ждрело">Ждрелото на река Ерма</a></li>
                             <li><a target="_blank"  href="https://bg.wikipedia.org/wiki/%D0%9C%D1%83%D0%B7%D0%B5%D0%B9_%D0%BD%D0%B0_%D0%BC%D0%B8%D0%BD%D0%BD%D0%BE%D1%82%D0%BE_%D0%B4%D0%B5%D0%BB%D0%BE" title="Музей на минното дело">Подземен минен музей</a></li>
                         </ul>
-                    <h3>Кюстендил</h3>
+                      </div>
+
+                      <div id = "kystendil" class="col-md-2 col-sm-6">
+                        <h3>Кюстендил</h3>
                         <ul>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%22%D0%94%D0%B8%D0%BC%D0%B8%D1%82%D1%8A%D1%80_%D0%9F%D0%B5%D1%88%D0%B5%D0%B2%22,_%D0%9A%D1%8E%D1%81%D1%82%D0%B5%D0%BD%D0%B4%D0%B8%D0%BB" title="Къща-музей &quot;Димитър Пешев&quot;, Кюстендил">Къща-музей „Димитър Пешев“</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D0%B5%D0%BD_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%9A%D1%8E%D1%81%D1%82%D0%B5%D0%BD%D0%B4%D0%B8%D0%BB" class="mw-redirect" title="Регионален исторически музей, Кюстендил">Регионален исторически музей</a></li>
@@ -385,7 +530,10 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%BA%D0%B0%D0%BA%D0%B0%D0%B2%D0%B8%D1%86%D0%B0_(%D1%85%D0%B8%D0%B6%D0%B0)" title="Скакавица (хижа)">Хижа „Скакавица“</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%B5%D0%BC%D1%82%D0%B5_%D1%80%D0%B8%D0%BB%D1%81%D0%BA%D0%B8_%D0%B5%D0%B7%D0%B5%D1%80%D0%B0" title="Седемте рилски езера">Седемте рилски езера</a></li>
                         </ul>
-                    <h3>Благоевград</h3>
+                      </div>
+
+                      <div id = "kystendil" class="col-md-2 col-sm-6">
+                        <h3>Благоевград</h3>
                         <ul>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%9D%D0%B8%D0%BA%D0%BE%D0%BB%D0%B0_%D0%92%D0%B0%D0%BF%D1%86%D0%B0%D1%80%D0%BE%D0%B2%E2%80%9C" title="Къща-музей „Никола Вапцаров“">Къща-музей „Никола Вапцаров“</a></li>
                             <li><a href="https://bg.wikipedia.org/wiki/%D0%9A%D1%8A%D1%89%D0%B0-%D0%BC%D1%83%D0%B7%D0%B5%D0%B9_%E2%80%9E%D0%9D%D0%B5%D0%BE%D1%84%D0%B8%D1%82_%D0%A0%D0%B8%D0%BB%D1%81%D0%BA%D0%B8%E2%80%9C" title="Къща-музей „Неофит Рилски“">Къща-музей „Неофит Рилски“</a></li>
@@ -405,19 +553,16 @@
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%90%D1%80%D1%85%D0%B5%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9,_%D0%A1%D0%B0%D0%BD%D0%B4%D0%B0%D0%BD%D1%81%D0%BA%D0%B8" class="mw-redirect" title="Археологически музей, Сандански">Археологически музей</a></li>
                             <li><a target="_blank" href="https://bg.wikipedia.org/wiki/%D0%93%D0%BE%D1%86%D0%B5%D0%B4%D0%B5%D0%BB%D1%87%D0%B5%D0%B2%D1%81%D0%BA%D0%B8_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8_%D0%BC%D1%83%D0%B7%D0%B5%D0%B9" title="Гоцеделчевски исторически музей">Общински исторически музей</a></li>
                         </ul>
-            </div>
-
-          </div>
-        </div>
-
-
-
-
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+      </div>
     </body>
+
     <footer>
 
     </footer>
-
-
 
 </html>

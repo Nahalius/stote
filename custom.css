@@ -1,43 +1,58 @@
+
 p h1 h2 h3{
 font-family: 'Ledger', serif;
 }
 
+p {
+  font-size: 16px;
+}
+ img {
+   max-width: 100%;
+ }
+
 /*Jumbotron*/
 
 .jumbotron {
-padding: 15px 15px;
-margin: 0px 20px ;
-color: inherit;
+  padding: 0;
+  margin: 0;
 }
 
-header {
+.home {
   position: relative;
-  background: url(assets/bg-header.jpg) center;
+  background: url(assets/bg-header_1.jpg) center;
   background-size: cover;
   height: 100vh;
   color: #fff;
+  width: 100%;
 }
+.jumbotron .container {
+  position: absolute;
+  top: 30%;
+  width: 40%;
+  left: 10%;
+}
+
+.home .btn-success,
+.info .btn-success {
+  background-color: #ffad4e;
+  border-color:  #ffad4e;
+}
+
+.home .btn-success:hover,
+.info .btn-success:hover {
+  background-color: #c50411;
+  border-color:  #c50411;
+}
+
 
 .navbar-default {
     background-color: rgba(20, 51, 82, 0.75);
     border-color: #143352;
 }
-.home {
-  position: absolute;
-  top: 35%;
-  width: 40%;
-  left: 10%;
-}
 
-.home .btn-success {
-  background-color: #ffad4e;
-  border-color:  #ffad4e;
-}
+/*end of header*/
 
-.home .btn-success:hover {
-  background-color: #c50411;
-  border-color:  #c50411;
-}
+
 .google-maps {
     position: relative;
     padding-bottom: 55%; // This is the aspect ratio
@@ -50,4 +65,114 @@ header {
     left: 0;
     width: 100% !important;
     height: 100% !important;
+}
+
+/*INFO SECTION*/
+
+ .info {
+  height: auto;
+  display: inline-block;
+  margin: 150px 0;
+  box-sizing: border-box;
+}
+
+.info img {
+  width: 90%;
+  margin-top: 50px;
+  vertical-align: middle;
+  padding-left:  20px;
+}
+.info .jumbotron {
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+.info .jumbotron p {
+    font-size: 16px;
+  }
+
+/*END OF INFO SECTION*/
+
+/*VIDEO SECTION*/
+
+.embed-responsive-16by9 {
+    margin-top: 100px;
+    padding-bottom: 56.25%;
+    width: 75%;
+    margin: 0 auto;
+  }
+/*END OF VIDEO SECTION*/
+
+h2  {
+  color: #fff;
+  text-align: center;
+  padding-top: 75px;
+  font-weight: bold;
+}
+
+ .sever-zapad header,
+ .sever header,
+ .sever-iztok header,
+ .iug-iztok header,
+ .iug-centralen header,
+ .iug-zapad header{
+  height: 400px;
+  background: url('assets/Kom_stara_planina_pano.jpg') no-repeat center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.sever header {
+  background: url('assets/tarnovo.png') no-repeat center;
+}
+
+.sever-iztok header {
+  background: url('assets/dobrudja.jpg') no-repeat center;
+}
+
+
+.iug-iztok header {
+  background: url('assets/burgas.png') no-repeat center;
+}
+
+.iug-centralen header {
+  background: url('assets/DSE_22910.jpg') no-repeat center;
+}
+
+.iug-zapad header {
+  background: url('assets/sofia-cover.png') no-repeat center;
+  width: 100%;
+}
+.sever-zapad img,
+.sever img,
+.sever-iztok img,
+.iug-istok img,
+.iug-centralen img,
+.iug-zapad img {
+  height: 250px;
+  margin: 0 auto;
+  display: BLOCK;
+
+}
+.sever-zapad .objects,
+.sever .objects,
+.sever-iztok .objects,
+.iug-istok .objects,
+.iug-centralen .objects,
+.iug-zapad .objects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sever-zapad .objects a,
+.sever .objects a,
+.sever-iztok .objects a,
+.iug-istok .objects a,
+.iug-centralen .objects a,
+.iug-zapad .objects a {
+  color: #444;
+}
+.sever-zapad .objects a:hover {
+  color: #ffad4e;
 }
