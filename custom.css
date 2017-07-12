@@ -46,7 +46,7 @@ p {
 
 
 .navbar-default {
-    background-color: rgba(20, 51, 82, 0.75);
+    background-color: rgb(20, 51, 82);
     border-color: #143352;
 }
 
@@ -102,11 +102,23 @@ p {
   }
 /*END OF VIDEO SECTION*/
 
+.row {
+  margin: 0;
+}
+.row > .col-md-12 {
+  padding: 0;
+}
+
+.heading h1,
+.heading p {
+  text-align: center;
+  }
 h2  {
   color: #fff;
   text-align: center;
   padding-top: 75px;
   font-weight: bold;
+  text-shadow: 1px 1px #000;
 }
 
  .sever-zapad header,
@@ -130,15 +142,13 @@ h2  {
   background: url('assets/dobrudja.jpg') no-repeat center;
 }
 
-
 .iug-iztok header {
   background: url('assets/burgas.png') no-repeat center;
 }
 
 .iug-centralen header {
-  background: url('assets/DSE_22910.jpg') no-repeat center;
+  background: url('assets/plovdiv-cover.png') no-repeat center;
 }
-
 .iug-zapad header {
   background: url('assets/sofia-cover.png') no-repeat center;
   width: 100%;
@@ -146,18 +156,19 @@ h2  {
 .sever-zapad img,
 .sever img,
 .sever-iztok img,
-.iug-istok img,
+.iug-iztok img,
 .iug-centralen img,
 .iug-zapad img {
   height: 250px;
   margin: 0 auto;
   display: BLOCK;
+  opacity: 0.8;
 
 }
 .sever-zapad .objects,
 .sever .objects,
 .sever-iztok .objects,
-.iug-istok .objects,
+.iug-iztok .objects,
 .iug-centralen .objects,
 .iug-zapad .objects {
   display: flex;
@@ -168,11 +179,151 @@ h2  {
 .sever-zapad .objects a,
 .sever .objects a,
 .sever-iztok .objects a,
-.iug-istok .objects a,
+.iug-iztok .objects a,
 .iug-centralen .objects a,
 .iug-zapad .objects a {
   color: #444;
 }
-.sever-zapad .objects a:hover {
+.sever-zapad .objects a:hover
+.sever .objects a:hover,
+.sever-iztok .objects a:hover,
+.iug-iztok .objects a:hover,
+.iug-centralen .objects a:hover,
+.iug-zapad .objects a:hover {
   color: #ffad4e;
+}
+
+footer {
+  background-color:  #143352;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  height: 100%;
+  display: inline-block;
+  padding: 20px;
+  margin-left: 60px;
+  vertical-align: top;
+}
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #ffad4e;
+}
+
+footer .logo {
+  float: right;
+}
+footer img {
+  width: 60%;
+}
+
+@media all and (max-width: 1200px) {
+  .info img {
+    width: 100%;
+  }
+
+  .info .jumbotron {
+    margin: 30px 20px;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .sever-zapad .objects,
+  .sever .objects,
+  .sever-iztok .objects,
+  .iug-iztok .objects,
+  .iug-centralen .objects,
+  .iug-zapad .objects {
+    justify-content: flex-start;
+    margin-left: 50px;
+  }
+
+  footer {
+    height: auto;
+    padding: 0;
+    padding-left: 20px;
+  }
+
+  footer div,
+  footer h3 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  body {
+    word-wrap: break-word;
+  }
+
+.jumbotron .container {
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+.sever-zapad .objects,
+.sever .objects,
+.sever-iztok .objects,
+.iug-iztok .objects,
+.iug-centralen .objects,
+.iug-zapad .objects {
+  margin-left: 0;
+}
+
+.sever-zapad .objects li,
+.sever .objects li ,
+.sever-iztok .objects li,
+.iug-iztok .objects li,
+.iug-centralen .objects li,
+.iug-zapad .objects li {
+  padding-bottom: 10px;
+}
+.objects > div {
+  width: 100%;
+  text-align: center;
+}
+
+.objects > div ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.objects > div h3 {
+  border-bottom: 1px solid #143352;
+  padding-bottom: 10px;
+}
+.row {
+  margin: 0;
+}
+.row > .col-md-12 {
+  padding: 0;
+}
+  footer {
+    height: auto;
+    display: block;
+  }
+
+  footer div {
+    width: 100%;
+    text-align: center;
+  }
+
+footer h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fff;
+}
+  footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  footer .logo {
+    float: none;
+  }
 }
