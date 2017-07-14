@@ -184,7 +184,7 @@ h2  {
 .iug-zapad .objects a {
   color: #444;
 }
-.sever-zapad .objects a:hover
+.sever-zapad .objects a:hover,
 .sever .objects a:hover,
 .sever-iztok .objects a:hover,
 .iug-iztok .objects a:hover,

@@ -17,54 +17,93 @@
         <!-- Theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cosmo/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Ledger" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="custom.css">
     </head>
 
     <body>
 
-            <!-- Fixed navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-              <div class="container">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <a class="navbar-brand" href="index.html">Стоте</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                  <ul class="nav navbar-nav">
-                      <li ><a class="glyphicon glyphicon-home" href="index.html"></a></li>
-                      <li ><a class="glyphicon glyphicon-map-marker" href="map.html">Карта</a></li>
-                      <li><a class="glyphicon glyphicon-list" href="survey.html">Анкета</a></li>
-                
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a  href="">trello</a></li>
-                    <li><a  href="https://github.com/Nahalius/stote">github</a></li>
-                  </ul>
-                </div><!--/.nav-collapse -->
-              </div>
-            </nav>
-            <br>
-            <br>
-            <br>
-
-            <div >
-                <p>Survey and email colection</p>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Стоте</a>
             </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li ><a class="glyphicon glyphicon-home" href="index.html"></a></li>
+                <li ><a class="glyphicon glyphicon-map-marker" href="map.html">Карта</a></li>
+                <li><a class="glyphicon glyphicon-list" href="survey.html">Анкета</a></li>
+                <li class="dropdown">
+                  <a class="glyphicon glyphicon-leaf" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Области <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="index.html#sever-zapad">Северозападен район</a></li>
+                    <li><a href="index.html#sever">Северен централен район</a></li>
+                    <li><a href="index.html#sever-iztok">Североизточен район</a></li>
+                    <li><a href="index.html#iug-iztok">Югоизточен район</a></li>
+                    <li><a href="index.html#iug-centralen">Южен централен район</a></li>
+                    <li><a href="index.html#iug-zapad">Югозападен район</a></li>
 
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#sofia">София</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a  href="https://trello.com/b/hg3eyiI1/website-softuni">trello</a></li>
+                <li><a  href="https://github.com/Nahalius/stote">github</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+            <br>
+            <br>
+            <br>
 
-
-
-
+            <div class="typeform-widget" data-url="https://ivan316.typeform.com/to/OM9GYa" style="width: 100%; height: 500px;" >
+                </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName,
+                id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js";
+                 q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color:
+                 #999;opacity: 0.5; padding-top: 5px;" > powered by
+                 <a href="https://www.typeform.com/examples/?utm_campaign=OM9GYa&amp;utm_source=typeform.com-7762822-Basic&amp;
+                utm_medium=typeform&amp;utm_content=typeform-embedded-poweredbytypeform&amp;utm_term=EN" style="color: #999" target="_blank">Typeform</a>
+            </div>
 
     </body>
     <footer>
+      <div>
+        <h3>Важна Информация</h3>
+        <ul>
+          <li><a href="#">Често Задавани Въпроси</a></li>
+          <li><a href="#">Визи и граничен контрол</li>
+          <li><a href="#">Комуникация</a></li>
+          <li><a href="#">Транспорт</a></li>
+          <li><a href="#">Здравеопазване</a></li>
+          <li><a href="#">Валутна информация</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Полезни връзки</h3>
+        <ul>
+          <li><a href="#">Министерство на туризма</a></li>
+          <li><a href="#">Посолства</a></li>
+          <li><a href="#">Времето</a></li>
+          <li><a href="#">Валутен курс</a></li>
+          <li><a href="#">Търговски представителства</a></li>
+        </ul>
+      </div>
+
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo"/>
+      </div>
 
     </footer>
-
 
 
 </html>
